@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini AI Suite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;500;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': {
+                '50': '#f0f7ff',
+                '100': '#e0eefe',
+                '200': '#c7e0fe',
+                '300': '#a4c9fd',
+                '400': '#7ba09fa',
+                '500': '#5d87f7',
+                '600': '#4a6ef5',
+                '700': '#3f5bf2',
+                '800': '#364ccf',
+                '900': '#3044a8',
+                '950': '#1e296a',
+              },
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Lora', 'serif'],
+              mono: ['Inconsolata', 'monospace'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --background-light: #f3f4f6; /* gray-100 */
+        --background-dark: #111827; /* gray-900 */
+        --user-bubble-light: #4a6ef5; /* primary-600 */
+        --model-bubble-light: #ffffff;
+        --user-bubble-dark: #4a6ef5; /* primary-600 */
+        --model-bubble-dark: #374151; /* gray-700 */
+        --font-family: 'Inter', sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[var(--background-light)] dark:bg-[var(--background-dark)]" style="font-family: var(--font-family)">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

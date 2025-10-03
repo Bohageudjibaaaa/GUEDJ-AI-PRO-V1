@@ -1,0 +1,7 @@
+{
+  "name": "Gemini AI Chat",
+  "description": "A professional, modern AI Suite built with React and Gemini. It features real-time chat, image generation, image editing, video generation, chat history, customizable AI personalities, multi-language support (including Arabic), and a sleek dark/light mode UI.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
